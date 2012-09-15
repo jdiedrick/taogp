@@ -22,6 +22,7 @@ public:
     string mName;
     NodeBase* mParent;
     vector<NodeBase*> mChildren;
+    
     bool mVisibility;    
         
     void setName(string iName);
@@ -33,6 +34,8 @@ public:
     bool getVisibility();
     
     int getChildCount();
+    
+    void toggleVisibility();
     
     void print();
 };

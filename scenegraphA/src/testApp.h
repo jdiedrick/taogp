@@ -22,15 +22,15 @@ class testApp : public ofBaseApp{
         NodeBase root;
         NodeBase childA; 
         NodeBase childB;
-//        NodeBase childC;
-//        
-//        NodeBase childA1;
-//        NodeBase childA2;
-//    
-//        NodeBase childB1;
-//        NodeBase childB2;
-//    
-//        NodeBase childC1;
-//    
-//        NodeBase childA1A;
+        NodeBase childC;
+        
+        NodeBase childA1;
+        NodeBase childA2;
+    
+        NodeBase childB1;
+        NodeBase childB2;
+    
+        NodeBase childC1;
+    
+        NodeBase childA1A;
 };  

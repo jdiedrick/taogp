@@ -13,8 +13,9 @@
 NodeBase::NodeBase(){
 
     mName = "untitled";
-    mVisibility = true;
+    mVisibility = TRUE;
     mParent = NULL;
+ //   mChildren = vector<NodeBase>;
     
 }
 
@@ -40,6 +41,9 @@ int NodeBase::getChildCount(){
     return mChildren.size();
 }
 
+void NodeBase::toggleVisibility(){
+    mVisibility = !mVisibility;
+}
 
 void NodeBase::print(){
     if( getVisibility()){
