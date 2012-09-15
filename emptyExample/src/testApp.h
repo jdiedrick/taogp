@@ -24,12 +24,13 @@ class testApp : public ofBaseApp{
     NodeGeom root;
     
     NodeGeom childA; 
-    
+
+    NodeGeom childA1;
+
     /*
     NodeBase childB;
     NodeBase childC;
     
-    NodeBase childA1;
     NodeBase childA2;
     
     NodeBase childB1;
@@ -37,6 +38,6 @@ class testApp : public ofBaseApp{
     
     NodeBase childC1;
     
-    NodeBase childA1A;
+    NodeGeom childA1A;
     */
 };

@@ -50,7 +50,7 @@ void NodeBase::print(){
         //std::string indent = " ";
         //int len = indent.length() * iIndent;
         
-        cout<< mName << endl;
+        cout << "Name: " << mName << " | Children: " << mChildren.size() << endl;
         
         int tChildCount = getChildCount();
         

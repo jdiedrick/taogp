@@ -1,4 +1,5 @@
 #include "testApp.h"
+#include "ofMath.h"
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -12,11 +13,21 @@ void testApp::setup(){
     //child A, parent is root
     childA = NodeGeom();
     childA.setName( "childA" );
-    root.setColor(ofColor(255,0,0));
-    root.setPosition(ofVec3f(-100.0, 0.0, 0.0));
-    root.setSideLength(25.0);
-
+    childA.setColor(ofColor(255,255,255));
+    childA.setPosition(ofVec3f(100.0, 0.0, 0.0));
+    childA.setSideLength(25.0);
+    
     root.addChild(&childA);
+    
+    //child A1, parent is A
+    childA1 = NodeGeom();
+    childA1.setName( "childA1" );
+    childA1.setColor( ofColor(255, 128, 0));
+    childA1.setPosition(ofVec3f (50.0, 0.0, 0.0));
+    childA1.setSideLength(12.5);
+    
+    childA.addChild(&childA1);
+    
  
     /*
     //child B, parent is root
@@ -29,10 +40,7 @@ void testApp::setup(){
     childC.setName( "childC" );
     root.addChild(&childC);
     
-    //child A1, parent is A
-    childA1 = NodeBase();
-    childA1.setName( "childA1" );
-    childA.addChild(&childA1);
+    
     
     //child A2, parent is A
     childA2 = NodeBase();
@@ -49,8 +57,9 @@ void testApp::setup(){
     childC1.setName( "childC1" );
     childC.addChild(&childC1);
     
+    
     //child A1A, parent is A1
-    childA1A = NodeBase();
+    childA1A = NodeGeom();
     childA1A.setName( "childA1A" );
     childA1.addChild(&childA1A);
     */
@@ -64,17 +73,23 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    ofBackground(0,0,0);
+   // ofBackground(0);
     
     ofTranslate(ofGetWindowWidth()/2, ofGetWindowHeight()/2);
     
     root.draw();
+    //childA.draw();
+    //childA1.draw();
     
-    root.getRotation() = root.getRotation() + (0.0, 0.0, 0.01);
+    ofVec3f newRotation = root.getRotation();
+    newRotation = newRotation + ofVec3f(0.0, 0.0, 0.1);
+    root.setRotation(newRotation);
     
     root.print();
     
-    childA.toggleVisibility();
+   //childA.toggleVisibility();
+    
+    
 
 
 }
