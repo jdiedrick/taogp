@@ -15,7 +15,7 @@ NodeBase::NodeBase(){
     mName = "untitled";
     mVisibility = TRUE;
     mParent = NULL;
- //   mChildren = vector<NodeBase>;
+//    mChildren = vector<NodeBase>;
     
 }
 
