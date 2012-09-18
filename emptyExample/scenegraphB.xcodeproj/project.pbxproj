@@ -178,11 +178,11 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				8EB6C2321604E47600977F61 /* NodeBase.cpp */,
 				8EB6C2341604E55800977F61 /* NodeGeom.cpp */,
 				8EB6C2361604E56200977F61 /* NodeGeom.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				8EB6C22E1604E41100977F61 /* NodeBase.h */,
+				8EB6C2321604E47600977F61 /* NodeBase.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
 			);

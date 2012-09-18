@@ -6,14 +6,14 @@ void testApp::setup(){
 
     root = NodeGeom();
     root.setName( "root" );
-    root.setColor(ofColor(255,255,255));
+    root.setColor(ofColor(255,124,124));
     root.setPosition(ofVec3f(0.0, 0.0, 0.0));
     root.setSideLength(50.0);
     
     //child A, parent is root
     childA = NodeGeom();
     childA.setName( "childA" );
-    childA.setColor(ofColor(255,255,255));
+    childA.setColor(ofColor(124,124,124));
     childA.setPosition(ofVec3f(100.0, 0.0, 0.0));
     childA.setSideLength(25.0);
     
@@ -73,12 +73,12 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-   // ofBackground(0);
+   ofBackground(0);
     
     ofTranslate(ofGetWindowWidth()/2, ofGetWindowHeight()/2);
     
-    root.draw();
-    //childA.draw();
+    
+   // childA.draw();
     //childA1.draw();
     
     ofVec3f newRotation = root.getRotation();
@@ -87,7 +87,10 @@ void testApp::draw(){
     
     root.print();
     
-   //childA.toggleVisibility();
+    root.draw();
+
+    
+   childA.toggleVisibility();
     
     
 

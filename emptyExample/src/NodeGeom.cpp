@@ -50,11 +50,13 @@ void NodeGeom::draw(){
         
         //draw children
         
+      //  cout << "Drawing: " << mName << endl;
         
         int tChildCount = getChildCount();
         
         for (int i=0; i < tChildCount; i++){
-            mChildren[i]->draw();
+            cout<<"i'm now gonna draw this child:" << mName << "w children #" << mChildren.size() << endl;
+            mChildren[0]->draw();
         }
        ofPopMatrix();
 

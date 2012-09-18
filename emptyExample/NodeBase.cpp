@@ -8,6 +8,9 @@
 
 #include <iostream>
 #include "NodeBase.h"
+#include <vector>
+//#include "NodeGeom.h"
+
 
 
 NodeBase::NodeBase(){
@@ -15,7 +18,7 @@ NodeBase::NodeBase(){
     mName = "untitled";
     mVisibility = TRUE;
     mParent = NULL;
-    //    mChildren = vector<NodeBase>;
+    //mChildren = list<NodeBase>;
     
 }
 
@@ -50,8 +53,8 @@ void NodeBase::print(){
         //std::string indent = " ";
         //int len = indent.length() * iIndent;
         
-        cout << "Name: " << mName << " | Children: " << mChildren.size() << endl;
-        
+       cout << "Name: " << mName << " | Children: " << mChildren.size() << endl;
+       // cout << "Name: " << mName <<  endl;
         int tChildCount = getChildCount();
         
         for (int i=0; i < tChildCount; i++){
@@ -71,5 +74,7 @@ NodeBase* NodeBase::getChild(int iIndex){
 
 
 void NodeBase::draw(){
-    //stub method
+    
+   
+
 }
