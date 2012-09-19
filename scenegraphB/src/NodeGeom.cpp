@@ -9,6 +9,7 @@
 #include <iostream>
 #include "NodeGeom.h"
 #include "ofGraphics.h"
+#include "ofMain.h"
 
 
 NodeGeom::NodeGeom(){
@@ -20,6 +21,8 @@ NodeGeom::NodeGeom(){
     mColor = ofColor(255, 255, 255);
     
     mSideLength = 1.0;
+    
+    
 }
 
 
@@ -34,7 +37,9 @@ NodeGeom::NodeGeom(ofVec3f iPosition, ofVec3f iRotation, ofVec3f iScale){
 }
 
 void NodeGeom::draw(){
+    
     if(getVisibility()){
+        
         ofPushMatrix();
         ofTranslate(mPosition.x, mPosition.y, mPosition.z);
         ofScale(mScale.x, mScale.y, mScale.z);

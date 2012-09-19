@@ -12,6 +12,7 @@
 #include "NodeBase.h"
 #include "ofMath.h"
 #include "ofColor.h"
+#include "ofMain.h"
 
 class NodeGeom : public NodeBase{
 
@@ -50,6 +51,7 @@ public:
     void setSideLength(float iLength);    
     
     void draw();
+    
     
     
 };
