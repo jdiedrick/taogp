@@ -1,14 +1,13 @@
 //
 //  NodeBase.h
-//  scenegraphA
+//  emptyExample
 //
-//  Created by Johann Diedrick on 9/13/12.
+//  Created by Johann Diedrick on 9/15/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-
-#ifndef scenegraphA_NodeBase_h
-#define scenegraphA_NodeBase_h
+#ifndef emptyExample_NodeBase_h
+#define emptyExample_NodeBase_h
 
 using namespace std;
 #include <vector>
@@ -16,15 +15,15 @@ using namespace std;
 class NodeBase{
     
 public:
-
+    
     NodeBase();
-        
+    
     string mName;
     NodeBase* mParent;
     vector<NodeBase*> mChildren;
     
     bool mVisibility;    
-        
+    
     void setName(string iName);
     
     void addChild(NodeBase* iChild);
@@ -38,6 +37,12 @@ public:
     void toggleVisibility();
     
     void print();
+    
+    virtual void draw();
+    
+    NodeBase* getChild(int iIndex);
+
+
 };
 
 

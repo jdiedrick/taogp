@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 #include "NodeBase.h"
+#include "NodeGeom.h"
+
 
 class testApp : public ofBaseApp{
 	public:
@@ -19,18 +21,22 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        NodeBase root;
-        NodeBase childA; 
-        NodeBase childB;
-        NodeBase childC;
-        
-        NodeBase childA1;
-        NodeBase childA2;
+    NodeGeom root;
     
-        NodeBase childB1;
-        NodeBase childB2;
+    NodeGeom childA;
     
-        NodeBase childC1;
+    NodeGeom childA1;
     
-        NodeBase childA1A;
-};  
+    NodeGeom childA1A;
+
+    NodeGeom childB;
+    
+    NodeGeom childC;
+    
+    NodeGeom childB1;
+    
+    NodeGeom childC1;
+    
+    NodeGeom childA2;
+    
+  };
