@@ -74,7 +74,9 @@ NodeBase* NodeBase::getChild(int iIndex){
 
 
 void NodeBase::draw(){
-    
-   
+    //
+}
 
+void NodeBase::audioOut(){
+    //
 }

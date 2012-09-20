@@ -40,6 +40,8 @@ public:
     
     virtual void draw();
     
+    virtual void audioOut();
+    
     NodeBase* getChild(int iIndex);
 
 

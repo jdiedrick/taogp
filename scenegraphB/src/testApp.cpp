@@ -83,6 +83,9 @@ void testApp::setup(){
     
     childA.addChild(&childA2);
     
+    
+    rootSound = NodeSound();
+    
   
     
 }
@@ -111,7 +114,7 @@ void testApp::draw(){
     
     root.draw();
 
-    
+    rootSound.audioOut();
   // childA.toggleVisibility();
     
     

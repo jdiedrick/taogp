@@ -181,15 +181,15 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
+				8EB6C22E1604E41100977F61 /* NodeBase.h */,
+				8EB6C2321604E47600977F61 /* NodeBase.cpp */,
 				8EB6C2341604E55800977F61 /* NodeGeom.cpp */,
 				8EB6C2361604E56200977F61 /* NodeGeom.h */,
 				8EF2885B160A851300AA97C6 /* NodeSound.cpp */,
 				8EF28859160A850300AA97C6 /* NodeSound.h */,
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				8EB6C22E1604E41100977F61 /* NodeBase.h */,
-				8EB6C2321604E47600977F61 /* NodeBase.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;

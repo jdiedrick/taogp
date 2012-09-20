@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "NodeBase.h"
 #include "NodeGeom.h"
+#include "NodeSound.h"
 
 
 class testApp : public ofBaseApp{
@@ -38,5 +39,7 @@ class testApp : public ofBaseApp{
     NodeGeom childC1;
     
     NodeGeom childA2;
+    
+    NodeSound rootSound;
     
   };

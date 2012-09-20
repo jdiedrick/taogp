@@ -40,7 +40,7 @@ public:
     vector <float> rAudio;
     
 
-    
+    void audioOut(float * output, int bufferSize, int nChannels);
     
 };
 
